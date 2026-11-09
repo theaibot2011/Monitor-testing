@@ -1,0 +1,13 @@
+# Security headers and caching live in dist/_headers (generated at build),
+# so they also apply to drag-and-drop (Netlify Drop) deploys.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

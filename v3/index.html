@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>MonitorTest: free, detailed monitor check</title>
+    <meta name="description" content="Check a monitor for lines, dead pixels, light leaks, burn-in and more, step by step in plain English. Free, nothing uploaded, works offline. For buying, selling or after a repair." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MonitorTest" />
+    <meta property="og:title" content="MonitorTest: free, detailed monitor check" />
+    <meta property="og:description" content="Check a monitor for lines, dead pixels, light leaks and more, step by step. Free and private." />
+    <meta property="og:url" content="https://monitortesting.netlify.app/" />
+    <meta property="og:image" content="https://monitortesting.netlify.app/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://monitortesting.netlify.app/" />
+    <script>
+      /* If the app files fail to load (e.g. a deep URL like /some/path made relative asset paths wrong), go to the app root once. */
+      window.addEventListener('error', function (e) {
+        var t = e.target;
+        if (!t || (t.tagName !== 'SCRIPT' && t.tagName !== 'LINK')) return;
+        try { if (sessionStorage.getItem('monitortest.rootRedirect')) return; sessionStorage.setItem('monitortest.rootRedirect', '1'); } catch (_) { return; }
+        location.replace('/' + location.search);
+      }, true);
+      /* Very old browsers cannot run the app: show a plain message instead of a blank page. */
+      if (!('replaceAll' in String.prototype) || !window.CSS || !CSS.supports('inset', '0')) {
+        document.addEventListener('DOMContentLoaded', function () {
+          var r = document.getElementById('root');
+          if (!r) return;
+          r.style.cssText = 'font:20px/1.5 sans-serif;color:#f1f5f9;padding:32px;max-width:640px;margin:0 auto';
+          r.textContent = 'MonitorTest needs a newer web browser. Please open this page in an up-to-date Chrome, Edge, Firefox or Safari.';
+        });
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-C079ATM-.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DxoMCo_q.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript><p style="font:20px/1.5 sans-serif;color:#f1f5f9;padding:32px">MonitorTest needs JavaScript switched on.</p></noscript>
+  </body>
+</html>
