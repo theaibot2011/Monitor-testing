@@ -6,18 +6,13 @@ Everything runs in your browser. Nothing is uploaded, there's no tracking, and i
 
 ## Try it
 
-**Live site:** https://monitortesting.netlify.app
-
-| Version | Link | Notes |
-|---|---|---|
-| v3 | https://theaibot2011.github.io/Monitor-testing/v3/ | Latest |
-| v2 | https://theaibot2011.github.io/Monitor-testing/v2/ | Fixed the v1 error |
-| v1 | https://theaibot2011.github.io/Monitor-testing/v1/ | Original (has a known error) |
+- **Live site:** https://monitortesting.netlify.app
+- **GitHub Pages:** https://theaibot2011.github.io/Monitor-testing/v3/
 
 ## What's in this repo
 
-- `source/` - the source code (v3.1), built with React, TypeScript, Vite and Tailwind
-- `v1/`, `v2/`, `v3/` - the built versions of each release
+- `source/` - the source code, built with React, TypeScript, Vite and Tailwind
+- `v3/` - the built version that runs on GitHub Pages
 
 ## Run it yourself
 
